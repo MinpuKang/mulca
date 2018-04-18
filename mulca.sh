@@ -28,7 +28,7 @@ if [ -f  $sub_ca_file ];then
 fi
 
 if [ -z $1 ];then
-    echo "ERROR: missing th file name";exit
+    echo "ERROR: missing the file name";exit
 fi
 
 if [ -f $1 ];then
