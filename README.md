@@ -15,7 +15,7 @@ There certificats are in one file:
 [coreuser@HK-CentOS ca]$
 ```
 
-#### openssl issue
+## openssl issue
 
 openssl always print out the first certificates:
 ```
@@ -38,7 +38,7 @@ Certificate:
 [coreuser@HK-CentOS ca]$
 ```
 
-#### mulca is coded to check all certificates in one file based on openssl
+## mulca is coded to check all certificates in one file based on openssl
 
 The printout of mulca:
 
@@ -106,7 +106,7 @@ Certificate:
 [coreuser@HK-CentOS ca]$
 ```
 
-#### openssl new version
+## openssl new version
 
 According the designer of openssl, upcoming release 1.1.1 of openssl will fix this issue with new function STORE.
 
