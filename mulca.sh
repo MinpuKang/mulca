@@ -41,7 +41,7 @@ if [ -f $1 ];then
         echo "Total Certificate found: $ca_total_number";echo         #printout the totle certificates number
         
         #this is used for the ca file modifyed in windows
-        tmp_ca_file="/tmp/"$1"tmp.crt"     #temporary file of the input
+        tmp_ca_file="/tmp/"`echo ${1##*/}`"tmp.crt"     #temporary file of the input
         sed 's/\r//g' $1 > $tmp_ca_file    #replace the line break of windows and write into the temporary file, the input file is not changed.
         
         while read line || [ -n "$line" ]  #read the certificate in the temporary file 
